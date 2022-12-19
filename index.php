@@ -19,26 +19,26 @@
         $json = file_get_contents("srd_5e_monsters.json");
         $parsed_json = json_decode($json,true);
 
-   
-        $name = "name";
+        $type= "type";
         $tableau = $parsed_json ;
+        // var_dump($tableau);
 
         foreach( $tableau as $l ){
-            echo "name : ".$l['name']."</br>";
-            $stmt = $pdo->prepare ("INSERT INTO monster (name) VALUES( :name)") ;
-            $stmt->bindParam(':name', $l['name'] );
+            echo "type : ".$l['meta']."</br>";
+            $stmt = $pdo->prepare ("INSERT INTO monster (type) VALUES( :type)") ;
+            $stmt->bindParam(':type', $l['meta'] );
             $stmt->execute();         
         }
-       
-                // echo $value . '<br />';
-                // echo $valeur;
-                // echo $nom->{'name'};
-            
 
-        
-    // echo "<pre>";
-    // echo $jsonArray;
-    // echo "</pre>";
+        // //! update
+        // foreach( $tableau as $l ){
+        //     echo "type : ".$l['meta']."</br>";
+        //     $stmt = $pdo->prepare ("UPDATE monster SET name = 'Adult Black Dragon' where id = 3") ;
+        //     // $stmt->bindParam(':nom', 'Adult Black Dragon' );
+        //     $stmt->execute();         
+        // }
+
+        // update monster set name = "Adult Black Dragon" where id = 3;
 
     ?>
 </body>
