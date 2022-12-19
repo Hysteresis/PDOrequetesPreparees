@@ -1,6 +1,6 @@
 img{
-    height: auto;
-    width: 290px;
+    height: 200px;
+    width: auto;
 }
 body{
     font-family: 'Michroma', sans-serif;
@@ -26,8 +26,8 @@ h2{
     background: rgb(252,79,6);
     background: radial-gradient(circle, rgba(252,79,6,0.36220227837228647) 51%, rgba(243,127,19,0.2613619422378326) 91%);    
     margin: 10px;
-    padding: 10px;
-    width: 300px;
+    padding: 20px;
+    width: 350px;
     border-radius: 10px;
     box-shadow: 0.4em 0.4em .4em rgb(58, 58, 57);
 
@@ -37,10 +37,20 @@ h2{
     background: rgb(252,79,6);
     background: radial-gradient(circle, rgba(252,79,6,0.36220227837228647) 51%, rgba(243,127,19,0.2613619422378326) 91%);    
     margin: 10px;
-    padding: 10px;
+    padding: 20px;
     width: 400px;
     border-radius: 10px;
     box-shadow: 0.4em 0.4em .4em rgb(58, 58, 57);
+}
+
+
+.centerImage{
+    display: flex; 
+    justify-content: center;
+}
+
+.centerText{
+    text-align: center;
 }
 
 .detail{
@@ -48,8 +58,29 @@ h2{
     text-align: center;
     margin-top: 50px;
     margin-bottom: 20px;
-    font-size: 1.2em
+    font-size: 1.2em;
+    text-decoration : none;
 }
+
+.detail:hover{
+    color: rgb(3, 165, 3);
+    text-decoration: underline;
+}
+
+.retour{
+    color: green;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    text-decoration : none;
+}
+
+.retour:hover{
+    color: rgb(4, 156, 4);
+    text-decoration: underline;
+}
+
 .gras{
     font-weight: bold;
     font-size: 1.1em
