@@ -12,7 +12,22 @@
 </head>
 <body>
 
-<h1>Liste des monsters</h1>
+<h1>Liste des monstres</h1>
+
+    <form  action="" method="get" class="form-example">
+        <div class="search">
+            <div class="form-example">
+                <label for="name"> </label>
+                <input type="text" name="name" id="name" placeholder="Saisir un monstre..." required>
+            </div>
+            <div class="form-example">
+                <input type="submit" value="Rechercher">
+            </div>
+        </div>
+    </form>
+
+
+
     <?php
     require_once('connect.php');
         // indiqué le chemin de votre fichier JSON, il peut s'agir d'une URL

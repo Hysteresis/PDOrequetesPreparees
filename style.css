@@ -2,6 +2,7 @@ img{
     height: 200px;
     width: auto;
 }
+
 body{
     font-family: 'Michroma', sans-serif;
 }
@@ -23,26 +24,22 @@ h2{
 }
 
 .card{
-    background: rgb(252,79,6);
-    background: radial-gradient(circle, rgba(252,79,6,0.36220227837228647) 51%, rgba(243,127,19,0.2613619422378326) 91%);    
     margin: 10px;
     padding: 20px;
-    width: 350px;
+    width: 330px;
     border-radius: 10px;
     box-shadow: 0.4em 0.4em .4em rgb(58, 58, 57);
-
+    background-image: radial-gradient(circle, #b4d16b, #c0d567, #ccd963, #d9dd5f, #e7e05b, #ecdd56, #f2db52, #f7d84e, #f5cf48, #f2c643, #efbe3e, #ecb53a);
 }
 
 .card-detail{
-    background: rgb(252,79,6);
-    background: radial-gradient(circle, rgba(252,79,6,0.36220227837228647) 51%, rgba(243,127,19,0.2613619422378326) 91%);    
     margin: 10px;
     padding: 20px;
     width: 400px;
     border-radius: 10px;
     box-shadow: 0.4em 0.4em .4em rgb(58, 58, 57);
+    background-image: radial-gradient(circle, #b4d16b, #c0d567, #ccd963, #d9dd5f, #e7e05b, #ecdd56, #f2db52, #f7d84e, #f5cf48, #f2c643, #efbe3e, #ecb53a);
 }
-
 
 .centerImage{
     display: flex; 
@@ -83,5 +80,16 @@ h2{
 
 .gras{
     font-weight: bold;
-    font-size: 1.1em
+    font-size: 1.1em;
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+   
+}
+
+input{
+    font-size: 1.4em;
+    margin-bottom: 2em;
 }
